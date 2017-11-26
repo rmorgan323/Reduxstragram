@@ -30,6 +30,10 @@ module.exports = {
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
     }
+    {
+      test: /\.styl$/,
+      loader: 'css-loader!stylus-loader?paths=node_modules/bootstrap-stylus/stylus/'
+    }
     ]
   }
 };
